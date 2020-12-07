@@ -1,0 +1,50 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60rem;
+    padding: 4rem;
+    border-radius: 2rem;
+    background-color: #fff;
+    box-shadow: $shadow-lt;
+    z-index: 10;
+
+    &#event-detail {
+        width: 80rem;
+        border-radius: 1rem;
+    }
+
+    p {
+        position: relative;
+        width: 60%;
+        font-size: 1.5rem;
+        line-height: 160%;
+        color: $swatch_4;
+    }
+
+    @media screen and (max-width: 768px){
+        width: 90%;
+    }
+}
+
+.modal-header {
+    margin-bottom: 3rem;
+    
+    p {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+        color: $swatch_7;
+        letter-spacing: .5px;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    box-shadow: none;
+    padding: 0;
+}
+

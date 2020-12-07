@@ -1,0 +1,28 @@
+.events-grid {
+    position: relative;
+    width: 100%;
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(15rem, auto);
+    gap: 2.5rem;
+
+    @media screen and (max-width: 1280px) {
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(6, 1fr);
+        padding: 2rem;
+    }
+
+    @media screen and (max-width: 680px) {
+        grid-template-columns: repeat(3, 1fr);
+        // padding: 1rem;
+    }
+    
+    @media screen and (max-width: 400px) {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem 0;
+    }
+}

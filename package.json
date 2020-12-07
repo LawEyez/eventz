@@ -1,0 +1,21 @@
+{
+  "name": "eventz",
+  "version": "1.0.0",
+  "description": "event booking app",
+  "main": "app.mjs",
+  "scripts": {
+    "test": "nodemon --experimental-modules test.mjs",
+    "start": "nodemon --experimental-modules app.mjs"
+  },
+  "author": "Allen",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dataloader": "^2.0.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.11"
+  }
+}

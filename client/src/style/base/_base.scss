@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Questrial', 'Segoe UI', sans-serif;
+
+    &::-webkit-scrollbar {
+        width: .5rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $swatch_7;
+    }
+}
+
+body {
+    color: #101514;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #101514;
+}
+
+.App {
+    margin-left: 10rem;
+
+    @media screen and (max-width: 600px) {
+        margin-left: 0;
+    }
+}
+
+.contain {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    padding: 4rem;
+    background-color: rgba($color: $swatch_7, $alpha: .25);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: .7);
+    z-index: 2;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+        height: 5rem;
+        width: auto;
+    }
+}

@@ -1,0 +1,58 @@
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: .5px;
+    border-radius: 1.3rem;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    outline: none;
+    background-color: #fff;
+    border: none;
+    box-shadow: $shadow-lt;
+    cursor: pointer;
+
+    &-dk {
+        background-color: $swatch_2;
+        color: #fff;
+
+        &-otl {
+            border: solid 1px $swatch_2;
+            color: $swatch_2;
+            box-shadow: none;
+            transition: .3s;
+
+            &:hover {
+                background-color: $swatch_2;
+                color: #fff;
+            }
+        }
+    }
+
+    &-lt {
+        background-color: #fff;
+        color: $swatch_2;
+
+        &-otl {
+            border: solid 1px #fff;
+            color: #fff;
+            box-shadow: none;
+        }
+    }
+
+    &-sky {
+        background-color: $swatch_7;
+        color: #fff;
+    }
+
+    &-inline {
+        display: flex;
+    }
+
+    &-block {
+        display: flex;
+        flex-direction: column;
+    }
+}
